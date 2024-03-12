@@ -15,7 +15,7 @@ Stops the database instance of the SAP system.
         workloads sap-database-instance stop --sap-virtual-instance-name <VIS Name> -g <Resource-group-name> -n <ResourceName>
     ```
 
-- Stop Database instance of the SAP system using the Azure resource ID of the instance:  Currently stop action is supported for SAP HANA Database only.
+- Stop Database instance of the SAP system using the Azure resource ID of the instance. Currently stop action is supported for SAP HANA Database only.
     ```bash
         workloads sap-database-instance stop --id <ResourceID>
     ```
@@ -36,12 +36,12 @@ Stops the database instance of the SAP system.
         workloads sap-database-instance stop --id <resource-id>
     ```
 
-- Stop Database instance of the SAP system with Virtual Machine: Currently stop action is supported for SAP HANA Database only.
+- Stop Database instance of the SAP system and its underlying Virtual Machine. Currently stop action is supported for SAP HANA Database only.
     ```bash
         workloads sap-database-instance stop --sap-virtual-instance-name <vis-name> -g <resource-group-name> -n <db-instance-name> --deallocate-vm
     ```
 
-- Soft Stop Database instance of the SAP system: Currently stop action is supported for SAP HANA Database only.
+- Soft Stop Database instance of the SAP system. Currently stop action is supported for SAP HANA Database only.
     ```bash
         workloads sap-database-instance stop --sap-virtual-instance-name <vis-name> -g <resource-group-name> -n <db-instance-name> --soft-stop-timeout-seconds <timeout-in-seconds>
     ```
